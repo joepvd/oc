@@ -45,11 +45,13 @@ ExclusiveArch:  %{go_arches}
 ExclusiveArch:  x86_64 aarch64 ppc64le s390x
 %endif
 
+BuildRequires:  annobin
 BuildRequires:  golang >= %{golang_version}
 BuildRequires:  goversioninfo
 BuildRequires:  krb5-devel
-BuildRequires:  rsync
+BuildRequires:  llvm-libs
 BuildRequires:  rpm-build
+BuildRequires:  rsync
 
 Provides:       atomic-openshift-clients = %{version}
 Obsoletes:      atomic-openshift-clients <= %{version}
