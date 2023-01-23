@@ -49,6 +49,7 @@ BuildRequires:  golang >= %{golang_version}
 BuildRequires:  goversioninfo
 BuildRequires:  krb5-devel
 BuildRequires:  rsync
+BuildRequires:  rpm-build
 
 Provides:       atomic-openshift-clients = %{version}
 Obsoletes:      atomic-openshift-clients <= %{version}
